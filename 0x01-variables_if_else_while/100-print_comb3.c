@@ -6,12 +6,10 @@
  */
 int main(void)
 {
-	int s = 0, e = 1, s1 = 1, e2 = 9, tmp = 1;
+	int s = 0, e = 1, s1 = 1, e2 = 9;
 
 	while (s <= e)
 	{
-		s1 = tmp;
-
 		while (s1 <= e2)
 		{
 			putchar(s + '0');
@@ -24,7 +22,6 @@ int main(void)
 				putchar(' ');
 			}
 		}
-		tmp++;
 		s++;
 	}
 	putchar('\n');
