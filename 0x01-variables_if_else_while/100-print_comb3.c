@@ -6,25 +6,30 @@
  */
 int main(void)
 {
-	int s = 0, e = 1, s1 = 1, e2 = 9;
+	int c;
+	int d = 0;
 
-	while (s <= e)
+	while (d < 10)
 	{
-		while (s1 <= e2)
+		c = 0;
+		while (c < 10)
 		{
-			putchar(s + '0');
-			putchar(s1 + '0');
-			s1++;
-
-			if (s != e)
+			if (d != c && d < c)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar('0' + d);
+				putchar('0' + c);
+
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+
+			c++;
 		}
-		s++;
+		d++;
 	}
 	putchar('\n');
 	return (0);
 }
-
